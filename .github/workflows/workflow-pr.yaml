@@ -13,8 +13,8 @@ jobs:
           python-version: 3.7
       - name: Run unit tests
         run: |
-          pip install pytest
-          pytest
+          pip install coverage
+          coverage run -m unittest
       - name: wemake-python-styleguide
         uses: wemake-services/wemake-python-styleguide@0.16.1
 
